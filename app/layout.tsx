@@ -75,7 +75,6 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
   },
 
-  // ── Open Graph (Facebook, LinkedIn, WhatsApp, Discord, Slack) ──
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -87,6 +86,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: OG_IMAGE,
+        secureUrl: OG_IMAGE,
         width: 1200,
         height: 630,
         alt: "Jainish Dabgar — Full-Stack Web Developer Portfolio",
@@ -95,7 +95,6 @@ export const metadata: Metadata = {
     ],
   },
 
-  // ── Twitter / X Card ──
   twitter: {
     card: "summary_large_image",
     title: "Jainish Dabgar — Full-Stack Web Developer",
@@ -106,7 +105,6 @@ export const metadata: Metadata = {
     site: "@jainishdabgar",
   },
 
-  // ── App Link Metadata (iOS / Android deep linking) ──
   appLinks: {
     web: {
       url: BASE_URL,
@@ -114,13 +112,10 @@ export const metadata: Metadata = {
     },
   },
 
-  // ── Verification tokens (add your own from Google / Bing search console) ──
   verification: {
-    // google: "your-google-site-verification-token",
-    // other: { "msvalidate.01": "your-bing-token" },
+    google: "your-google-site-verification-token",
   },
 
-  // ── Other meta ──
   other: {
     "linkedin:owner": "jainish-dabgar-87474a320",
     "og:locality": "Ahmedabad",
@@ -142,15 +137,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable} data-scroll-behavior="smooth">
       <head>
-        {/* Canonical & preconnect for Cloudinary CDN */}
         <link rel="preconnect" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
 
-        {/* Preconnect for Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
-        {/* Structured Data — JSON-LD Person schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -193,7 +185,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Structured Data — WebSite schema for Sitelinks search box eligibility */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

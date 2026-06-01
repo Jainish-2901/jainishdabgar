@@ -51,6 +51,8 @@ app/
 ├── layout.tsx              # Root layout — Inter font + full SEO metadata
 ├── globals.css             # Design system — tokens, animations, custom scrollbar
 ├── page.tsx                # Home page — assembles all sections
+├── sitemap.ts              # structural route generation
+├── robots.txt              # search engine crawler directives
 ├── not-found.tsx           # Interactive diagnostics terminal 404 page
 ├── achievements/           # /achievements — full achievements archive
 │   ├── page.tsx

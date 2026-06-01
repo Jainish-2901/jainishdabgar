@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Direct sitemap declaration mapping for standard crawling engines
+Sitemap: https://jainishdabgar.vercel.app/sitemap.xml
