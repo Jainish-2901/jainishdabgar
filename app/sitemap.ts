@@ -1,19 +1,28 @@
 import { MetadataRoute } from "next";
 
+const BASE_URL = "https://jainishdabgar.vercel.app";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://jainishdabgar.vercel.app";
+  const now = new Date().toISOString();
 
-    // Dynamic distribution matrix for all core architecture endpoints
-    const routes = [
-        "",
-        "/archive",
-        "/achievements",
-    ];
-
-    return routes.map((route) => ({
-        url: `${baseUrl}${route}`,
-        lastModified: new Date().toISOString(),
-        changeFrequency: route === "" ? "weekly" : "monthly",
-        priority: route === "" ? 1.0 : 0.8,
-    }));
+  return [
+    {
+      url: BASE_URL,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1.0,
+    },
+    {
+      url: `${BASE_URL}/archive`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/achievements`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+  ];
 }
