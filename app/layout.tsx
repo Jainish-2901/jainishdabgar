@@ -10,7 +10,8 @@ const inter = Inter({
 });
 
 const BASE_URL = "https://jainishdabgar.vercel.app";
-const OG_IMAGE = "https://res.cloudinary.com/dmhk8m7sa/image/upload/v1780289032/jainishdabgar_brn6dx.jpg";
+const LOGO_URL = `${BASE_URL}/assets/logo.png`;
+const OG_IMAGE = LOGO_URL;
 
 export const viewport: Viewport = {
   themeColor: "#00d4ff",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: "Jainish Dabgar — Full-Stack Web Developer",
+    default: "Jainish Dabgar | Full-Stack Web Developer",
     template: "%s | Jainish Dabgar",
   },
 
@@ -75,6 +76,16 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
   },
 
+  icons: {
+    icon: [
+      { url: "/assets/logo.png", type: "image/png", sizes: "any" },
+    ],
+    apple: [
+      { url: "/assets/logo.png", type: "image/png", sizes: "180x180" },
+    ],
+    shortcut: "/assets/logo.png",
+  },
+
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -87,17 +98,17 @@ export const metadata: Metadata = {
       {
         url: OG_IMAGE,
         secureUrl: OG_IMAGE,
-        width: 1200,
-        height: 630,
-        alt: "Jainish Dabgar — Full-Stack Web Developer Portfolio",
-        type: "image/jpeg",
+        width: 512,
+        height: 512,
+        alt: "Jainish Dabgar — Brand Logo",
+        type: "image/png",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Jainish Dabgar — Full-Stack Web Developer",
+    title: "Jainish Dabgar | Full-Stack Web Developer",
     description:
       "MERN · Python · Next.js specialist. CTO @ Code Builders BCA. Premium 3D Portfolio.",
     images: [OG_IMAGE],
