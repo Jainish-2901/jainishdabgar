@@ -63,6 +63,16 @@ export const ARCHIVE_PROJECTS: Project[] = [
     source: "https://github.com/Jainish-2901/Lockr",
   },
   {
+    id: "sourcing-studio",
+    category: "React Web App",
+    name: "Sourcing Studio - B2B Textile Hub",
+    desc: "An end-to-end B2B industrial sourcing platform built with React.js. Features dynamic invoice modifiers, real-time inventory synchronization, and automated ledger bookkeeping with zero-delay metrics.",
+    tags: ["React.js", "Tailwind CSS", "JavaScript"],
+    img: "https://res.cloudinary.com/dmhk8m7sa/image/upload/v1780671136/sourcingstudio_vmhglf.png",
+    demo: "https://sourcingstudio.vercel.app/",
+    source: "https://github.com/Jainish-2901/sourcing-studio",
+  },
+  {
     id: "jmc-store",
     category: "MERN",
     name: "JMC Store - Digital Portal",

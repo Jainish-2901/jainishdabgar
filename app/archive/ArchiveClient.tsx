@@ -10,9 +10,10 @@ const CATEGORY_COLORS: Record<string, string> = {
   PYTHON: "#a78bfa",
   PHP: "#f59e0b",
   JavaScript: "#34d399",
+  "React Web App": "#61dafb"
 };
 
-const CATEGORIES = ["ALL", "MERN", "PYTHON", "PHP", "JavaScript"];
+const CATEGORIES = ["ALL", "MERN", "PYTHON", "PHP", "JavaScript", "React Web App"];
 
 export default function ArchiveClient() {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
