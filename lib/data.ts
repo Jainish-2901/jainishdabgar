@@ -43,6 +43,16 @@ export const ARCHIVE_PROJECTS: Project[] = [
     source: "https://github.com/Jainish-2901/gyanstack",
   },
   {
+    id: "gallamitra",
+    category: "MERN/PERN",
+    name: "GallaMitra - Multi-Tenant SaaS Billing",
+    desc: "A premium, high-performance billing and vyapar ledger platform for MSMEs. Engineered for 0-buffering operations using a serverless architecture, featuring dynamic multi-tenant isolation, automated invoice generation, and custom SVG analytics powered by Neon PostgreSQL.",
+    tags: ["React.js", "Vite", "Node.js", "Neon PostgreSQL", "Prisma ORM", "Tailwind CSS"],
+    img: "https://res.cloudinary.com/dmhk8m7sa/image/upload/v1782372030/GM_Landscape_Thumbnail_wg0qt3.png",
+    demo: "https://gallamitra.vercel.app",
+    source: "https://github.com/Jainish-2901/gallamitra",
+  },
+  {
     id: "mediasaver",
     category: "PYTHON",
     name: "MediaSaver - Social Media Engine",
